@@ -1,4 +1,6 @@
 import React from 'react';
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Carditem = ({item ,setbaytiket ,baytiket}) => {
     const statusColor =
@@ -15,7 +17,7 @@ const Carditem = ({item ,setbaytiket ,baytiket}) => {
     return (
         <div className='border p-2.5 mt-6 bg-white rounded-sm'>
            <div className='flex justify-between'>
-             <h1 onClick={()=>{alert(`${item.title}`), setbaytiket([...baytiket,item])}} className='text-xl font-bold'>{item.title}</h1>
+             <h1 onClick={()=>{toast.success(`${item.title}`); setbaytiket([...baytiket,item])}} className='text-xl font-bold'>{item.title}</h1>
              <button className={`${statusColor} px-2 rounded-xl`}>{item.status}</button>
            </div>
            <p>{item.description}</p>

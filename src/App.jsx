@@ -1,11 +1,11 @@
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { Suspense, useState } from 'react'
 import './App.css'
 import Baner from './baner'
 import Card from './card'
 import Nav from './nav'
 import Footer from './footer'
-import Sidecard from './Sidecard'
 let ticit = fetch("/tiket.json").then(x => x.json())
 
 function App() {
@@ -14,8 +14,9 @@ function App() {
  console.log(baytiket)
   return (
     <>
+     <ToastContainer position="top-right" autoClose={2000} />
       <Nav></Nav>
-      <Baner></Baner>
+      <Baner baytiket={baytiket}></Baner>
     
        <Suspense fallback={<h1>loding..</h1>}>
        <Card tiket={tiket} baytiket={baytiket} setbaytiket={setbaytiket}></Card>

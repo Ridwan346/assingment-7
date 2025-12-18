@@ -1,4 +1,4 @@
-const Baner = () => {
+const Baner = ({baytiket}) => {
   return (
     <div className="flex justify-around mt-5">
       <div
@@ -12,7 +12,7 @@ const Baner = () => {
         "
       >
         <h1 className="text-xl font-semibold">In-Progress</h1>
-        <h1 className="text-4xl font-bold">0</h1>
+        <h1 className="text-4xl font-bold">{baytiket.length}</h1>
       </div>
 
       <div className="
