@@ -15,7 +15,7 @@ const Carditem = ({item ,setbaytiket ,baytiket}) => {
     return (
         <div className='border p-2.5 mt-6 bg-white rounded-sm'>
            <div className='flex justify-between'>
-             <h1 onClick={()=>setbaytiket([...baytiket,item])} className='text-xl font-bold'>{item.title}</h1>
+             <h1 onClick={()=>{alert(`${item.title}`), setbaytiket([...baytiket,item])}} className='text-xl font-bold'>{item.title}</h1>
              <button className={`${statusColor} px-2 rounded-xl`}>{item.status}</button>
            </div>
            <p>{item.description}</p>
