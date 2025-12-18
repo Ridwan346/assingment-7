@@ -1,11 +1,11 @@
 import React from 'react';
 import Showhistory from './Showhistory';
 
-const Sidecard = ({baytiket}) => {
+const Sidecard = ({baytiket ,remove}) => {
     return (
        <div>
         {
-            baytiket.map(element =><Showhistory element={element}></Showhistory>)
+            baytiket.map(element =><Showhistory element={element} remove={remove}></Showhistory>)
         }
        </div>
     );

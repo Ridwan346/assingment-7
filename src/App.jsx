@@ -12,6 +12,10 @@ function App() {
  let tiket = ticit
  let [baytiket,setbaytiket] =useState([])
  console.log(baytiket)
+ let remove = (v)=>{
+    let newtiket = baytiket.filter(x => x.id !== v.id)
+    setbaytiket(newtiket)
+ }
   return (
     <>
      <ToastContainer position="top-right" autoClose={2000} />
@@ -19,7 +23,7 @@ function App() {
       <Baner baytiket={baytiket}></Baner>
     
        <Suspense fallback={<h1>loding..</h1>}>
-       <Card tiket={tiket} baytiket={baytiket} setbaytiket={setbaytiket}></Card>
+       <Card tiket={tiket} baytiket={baytiket} setbaytiket={setbaytiket} remove={remove}></Card>
      </Suspense>
     
      <Footer></Footer>

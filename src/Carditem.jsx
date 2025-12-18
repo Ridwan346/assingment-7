@@ -2,7 +2,8 @@ import React from 'react';
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Carditem = ({item ,setbaytiket ,baytiket}) => {
+const Carditem = ({item ,setbaytiket ,baytiket ,}) => {
+    //remove(item)
     const statusColor =
     item.status === "In Progress"
       ? "bg-yellow-400"
