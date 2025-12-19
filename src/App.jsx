@@ -6,7 +6,7 @@ import Baner from './baner'
 import Card from './card'
 import Nav from './nav'
 import Footer from './footer'
-let ticit = fetch("/tiket.json").then(x => x.json())
+let ticit = fetch("./tiket.json").then(x => x.json())
 
 function App() {
  let tiket = ticit
