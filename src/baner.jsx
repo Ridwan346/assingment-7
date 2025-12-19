@@ -1,9 +1,9 @@
 const Baner = ({baytiket}) => {
   return (
-    <div className="flex justify-around mt-5">
+    <div className=" lg:grid lg:grid-cols-2 sm:flex sm:flex-col justify-around mt-5">
       <div
         className="
-          h-[180px] w-[550px]
+          h-[180px] lg:w-[550px] sm:[350px]
           bg-gradient-to-r from-[#632EE3] to-[#9F62F2]
           bg-blend-overlay
           rounded-xl p-6 text-white
@@ -16,7 +16,7 @@ const Baner = ({baytiket}) => {
       </div>
 
       <div className="
-         h-[180px] w-[550px]
+         h-[180px] lg:w-[550px] sm:w-[350px]
           bg-gradient-to-r from-[#2EAC70] to-[#00827A]
           bg-blend-overlay
           rounded-xl p-6 text-white

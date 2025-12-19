@@ -10,11 +10,11 @@ const Nav = () => {
   <div className="flex ">
     <ul className="flex gap-4 ">
       <li>Home</li>
-      <li>FAQ</li>
-      <li>Changelog</li>
-      <li>Blog</li>
-      <li>Download</li>
-      <li>Contact</li>
+      <li li className=''>FAQ</li>
+      <li li className=''>Changelog</li>
+      <li li className=''>Blog</li>
+      <li li className=''>Download</li>
+      <li className=''>Contact</li>
       <button className='border px-2 rounded-xl bg-[#422AD5]'>New Ticket</button>
     </ul>
   </div>
